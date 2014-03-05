@@ -1,5 +1,5 @@
 Demoapp::Application.routes.draw do
-  route 'static_pages#home'
+  root 'static_pages#home'
   match '/help', to: 'static_pages#help', via: 'get'
   resources :users
 
